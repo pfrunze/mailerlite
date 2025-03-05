@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import Layout from '@/Layouts/Layout';
 
-import SubscribersTab from '@/components/SubscribersTab/SubscribersTab';
-import FieldsTab from '@/components/FieldsTab/FieldsTab';
+import SubscribersTab from '@/Components/SubscribersTab/SubscribersTab';
+import FieldsTab from '@/Components/FieldsTab/FieldsTab';
 
 export default function Welcome() {
     const [activeTab, setActiveTab] = useState('subscribers');
