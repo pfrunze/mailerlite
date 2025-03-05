@@ -11,11 +11,7 @@ class Field extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['title', 'type'];
-    
-    protected $casts = [
-        'type' => 'string'
-    ];
+    protected $guarded = [];
 
     protected static function newFactory(): FieldFactory
     {

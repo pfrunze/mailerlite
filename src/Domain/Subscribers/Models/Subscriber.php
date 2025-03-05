@@ -11,11 +11,7 @@ class Subscriber extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['email', 'name', 'state'];
-    
-    protected $casts = [
-        'state' => 'string'
-    ];
+    protected $guarded = [];
 
     protected static function newFactory(): SubscriberFactory
     {
